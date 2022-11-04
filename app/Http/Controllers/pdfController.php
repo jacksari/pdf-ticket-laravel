@@ -8,29 +8,23 @@ use Barryvdh\DomPDF\Facade\Pdf;
 
 class pdfController extends Controller
 {
-    //
+  //
 
-    public function generatePdfTicket(Request $request)
-    {
+  public function generatePdfTicket(Request $request)
+  {
+    $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isPhpEnabled' => true, 'isRemoteEnabled' => true])
+      ->setPaper(array(0, 0, 150, 600))
+      ->loadView('pdf.ticket', []);
 
-        // $file_name = $this->path . '/pdf/'.$request->tipoDocumento.'-'. $request->codigo .'.pdf'; 
-        // $view = \View::make('pdf.ticket',compact('request'))->render();
-        // $pdf = \App::make('dompdf.wrapper');
-        // $pdf->loadHTML($view);
-        // $pdf->setPaper(array(0,0,150,600));
-        // $pdf->render();
-        // $content = $pdf->output();
-        // $bytes = file_put_contents($file_name, $content);
+    return $pdf->download('lotesStageFour.pdf');
+  }
 
-        // $pdf = Pdf::loadView('pdf.ticket', []);
-        // $pdf->setPaper(array(0,0,150,600));
-        // return $pdf->download('invoice.pdf');
+  public function generatePdfFacturaA4(Request $request)
+  {
+    $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isPhpEnabled' => true, 'isRemoteEnabled' => true])
+      ->setPaper('a4', 'portrait')
+      ->loadView('pdf.facturaA4', []);
 
-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isPhpEnabled' => true, 'isRemoteEnabled' => true])
-        ->setPaper(array(0,0,150,600))
-        ->loadView('pdf.ticket', [
-        ]);
-  
-      return $pdf->download('lotesStageFour.pdf');
-    }
+    return $pdf->download('factura.pdf');
+  }
 }

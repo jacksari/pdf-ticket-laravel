@@ -20,4 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::post('/pdf/generatePdfTicket', [pdfController::class, 'generatePdfTicket']);
+Route::get('/pdf/generatePdfTicket', [pdfController::class, 'generatePdfTicket']);
+
+Route::get('/pdf/generatePdfFacturaA4', [pdfController::class, 'generatePdfFacturaA4']);
