@@ -29,7 +29,7 @@
         }
         .header .container-logo{
             /* background: red; */
-            height: 60px;
+            height: 70px;
             position: relative;
         }
         .header .container-logo .logo {
@@ -85,6 +85,8 @@
 
         .body{
             padding: .2rem .3rem;
+            margin-top: .2rem;
+            /* background: red; */
 
         }
         .body .body .title{
@@ -269,7 +271,7 @@
 
         <div class="container-logo">
             <img 
-            style="text-align: center; object-fit: contain; width: 80px; height: 60px;" 
+            style="text-align: center; object-fit: contain; width: 70px; height: 70px;" 
             class="logo" 
             src="https://imgs.search.brave.com/6Sj7i8c9-xaerDNHB_j8jhU4FWVt6zOOwSbhGzuROns/rs:fit:1185:1175:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvd29yZHByZXNz/L3dvcmRwcmVzc19Q/TkcyOC5wbmc" alt="">
 
