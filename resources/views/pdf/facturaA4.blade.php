@@ -19,62 +19,92 @@
             /* padding: 2rem; */
             font-family: 'Roboto', sans-serif;
             background: #FAFAFA;
+            padding: 2.5rem;
         }
+
 
         .header{
-            /* padding: .5rem; */
-            /* background: rgb(87, 126, 199); */
-        }
-        .header .container-logo{
-            width: 100%;
-            /* background: greenyellow; */
-            height: 200px;
             position: relative;
+            height: 140px;
+            /* background: red; */
         }
 
-        .header .container-logo img{
-            width: 100%;
-            height: 100%;
-        }
-        .container-icon {
-            width: 100%;
-            height: 100%;
-            /* position: relative; */
-            /* background: blue; */
+        .header .container-logo{
             position: absolute;
-            top: 50%;
-            left: 15%;
-            transform: translateY(-30%);
+            top: 0;
+            left: 0;
+            width: 40%;
+        }
 
-        }
-        .container-icon img{
-            width: 100px !important;
-            height:100px !important;
-            object-fit: contain;
-            margin-left: 1.5rem;
-
-        }
-        .container-icon p{
-            font-weight: 500;
-            font-size: 1rem;
-        }
-        .container-logo .factura{
-            position: absolute;
-            top: 50%;
-            right: 1.5%;
+        .header .container-logo .img{
             width: 200px;
             height: 100px;
-            transform: translateY(-43%);
-            /* background: aqua; */
-            font-size: 2.6rem;
-            font-weight: 500;
-            text-align: right;
+            object-fit: contain;
+        }
+        .header .container-logo h2{
+            margin: 1rem 0 .5rem 0 !important;
+            font-size: 12px;
+            font-weight: 300;
         }
 
-        .body {
-            margin-top: 2rem;
+        .header .container-logo p{
+            font-size: 10px;
         }
 
+        .header .container-ruc{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+        }
+
+        .header .container-ruc .ruc{
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .header .container-ruc .ruc h3 {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: .1rem;
+
+        }
+        .header .container-ruc .ruc h4{
+            font-size: 16px;
+            margin: .3rem 0;
+            font-weight: 300;
+            /* letter-spacing: .1rem; */
+        }
+
+        .header .container-ruc .date{
+            font-size: 10px;
+            margin-top: .3rem;
+        }
+
+        .body{
+
+        }
+
+        .body .header-text {
+
+        }
+
+        .body .header-text .information-table{
+
+        }
+
+        .body .header-text .information-table .title{
+            color: rgb(90, 141, 207);
+            font-size: 12px;
+        }
+
+        .body .header-text .information-table .table {
+            margin-top: .3rem;
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: .8rem;
+        }
         
 
     </style>
@@ -83,23 +113,98 @@
 <body>
 
     <div class="header">
+
         <div class="container-logo">
-            <img src="https://res.cloudinary.com/mikunaalli/image/upload/v1667461051/facturador/head_lqnzcc.png" alt="">
-            <div class="container-icon">
-                <img class="" src="https://liquipedia.net/commons/images/thumb/2/22/Thunder_Awaken_2022_lightmode.png/600px-Thunder_Awaken_2022_lightmode.png" alt="">
-                <p>Thunder Awaken</p>
-            </div>   
-            <p class="factura">Factura</p>         
+            <img style="width: 150px; height: 40px;" class="" src="https://imgs.search.brave.com/qubxN_wptyb2ZTrUkoRiF2kWX1HYev_Uz_Ntf0tDOmc/rs:fit:1024:274:1/g:ce/aHR0cHM6Ly9hcHBw/cm8uYmNwLmNvbS5i/by9NdWx0aXBsaWNh/QkNQL0NvbnRlbnQv/aW1nL2ljb25vcy9s/b2dvLWJjcC5wbmc" alt="">
+            <h2>BANCO DE CREDITO DEL PERU</h2>
+            <p>CALLE CENTENARIO N° 156</p>
+            <p>LA MOLINA</p>
+            <p>LIMA</p>
+        </div>
+
+        <div class="container-ruc">
+            <div class="ruc">
+                <h3>R.U.C. N° 20100047218</h3>
+                <h4>BOLETA DE VENTA ELECTRONICA</h4>
+                <h3>BA04-09831520</h3>
+            </div>
+            <p class="date">Fecha de Emisión: 29/08/2022</p>
         </div>
         
-        
-
     </div>
 
     <div class="body">
 
-        <h1>Invoice to</h1>
+        <div class="header-text">
+            <div class="information-table">
 
+                <p class="title">INFORMACIÓN DEL CLIENTE</p>
+
+
+                <div class="table">
+
+                    <table style="width: 100%; position:">
+        
+                        {{-- <thead style="border-top: 1px solid #000; border-bottom: 1px solid #000 !important; margin-bottom: .5rem;">
+                            <tr style="">
+                                <th style="width: {{ 30 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 400; font-size: 8px;">CONCEPTO</p>
+                                </th>
+                                <th style="width: {{ 70 . '%' }}; text-align: center;">
+                                    <p style="color: #000; font-weight: 400; font-size: 8px;">CANTIDAD</p>
+                                </th>
+                            </tr>
+                          </thead> --}}
+        
+                          <tbody>
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Nombre</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: Jack Anthony Sańchez Rivera</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Tipo de documento</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: DNI</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Número de documento</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: 70225508</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Dirección</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: Pasaje Malvas 135 - Breña</p>
+                                </td>
+                            </tr>
+                            
+                          </tbody>
+        
+    
+                        
+        
+                        
+                    </table>
+        
+                </div>
+
+            </div>
+        </div>
          
 
     </div>
