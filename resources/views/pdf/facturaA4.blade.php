@@ -103,7 +103,14 @@
             margin-top: .3rem;
             border: 1px solid #000;
             border-radius: 8px;
-            padding: .8rem;
+            padding: .6rem !important;
+        }
+
+        .mt-1{
+            margin-top: 1rem;
+        }
+        .mt-2{
+            margin-top: 2rem;
         }
         
 
@@ -144,18 +151,6 @@
                 <div class="table">
 
                     <table style="width: 100%; position:">
-        
-                        {{-- <thead style="border-top: 1px solid #000; border-bottom: 1px solid #000 !important; margin-bottom: .5rem;">
-                            <tr style="">
-                                <th style="width: {{ 30 . '%' }}; text-align: left;">
-                                    <p style="color: #000; font-weight: 400; font-size: 8px;">CONCEPTO</p>
-                                </th>
-                                <th style="width: {{ 70 . '%' }}; text-align: center;">
-                                    <p style="color: #000; font-weight: 400; font-size: 8px;">CANTIDAD</p>
-                                </th>
-                            </tr>
-                          </thead> --}}
-        
                           <tbody>
                             <tr>
                                 <td style="width: {{ 20 . '%' }}; text-align: left;">
@@ -193,12 +188,59 @@
                                 </td>
                             </tr>
                             
-                          </tbody>
+                          </tbody>            
+                    </table>
         
-    
-                        
-        
-                        
+                </div>
+
+            </div>
+
+            <div class="information-table mt-1">
+
+                <p class="title">INFORMACIÓN DEL CLIENTE</p>
+
+
+                <div class="table">
+
+                    <table style="width: 100%; position:">
+                          <tbody>
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Nombre</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: Jack Anthony Sańchez Rivera</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Tipo de documento</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: DNI</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Número de documento</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: 70225508</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 20 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">Dirección</p>
+                                </td>
+                                <td style="width: {{ 70 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 12px;">: Pasaje Malvas 135 - Breña</p>
+                                </td>
+                            </tr>
+                            
+                          </tbody>            
                     </table>
         
                 </div>
