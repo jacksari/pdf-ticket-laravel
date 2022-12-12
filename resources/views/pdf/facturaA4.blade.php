@@ -112,7 +112,43 @@
         .mt-2{
             margin-top: 2rem;
         }
-        
+
+        .body .table-items{
+
+
+        }
+
+        td {
+            padding: 5px;
+            border-top: 0px;
+            border-right: 0px;
+            /* border-bottom: 1px solid black; */
+            border-left: 0px;
+        }
+
+        .footer {
+            padding: 2.5rem;
+
+        }
+        .footer .qr{
+            height: 80px;
+            width: 80px;
+        }
+
+        .footer .text{
+            color: #000; font-weight: 300; font-size: 8px;
+        }
+
+        body{
+            position: relative
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            width: 94%;
+        }
 
     </style>
 </head>
@@ -247,13 +283,182 @@
 
             </div>
         </div>
+
+
+        <div class="table-items mt-2">
+            <div class="information-table">
+
+                <div class="table">
+
+                    <table style="width: 100%; " border="1" cellspacing="0">
+
+                        <thead style="background: #F05323;">
+                            <tr >
+                                <th  style="width: {{ 15 . '%' }}; text-align: center; padding: 0.1rem .1rem; background: #F05323; border: 1px solid #F05323; border-bottom: 1px solid #000 !important;">
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">Código de producto</p>
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">SUNAT</p>
+                                </th>
+                                <th style="width: {{ 8 . '%' }}; text-align: center; padding: 0.1rem .1rem; background: #F05323; border: 1px solid #F05323; border-bottom: 1px solid #000 !important;">
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">Unidad de
+                                        medida </p>
+                                </th>
+                                <th style="width: {{ 8 . '%' }}; text-align: center; padding: 0.1rem .1rem; background: #F05323; border: 1px solid #F05323; border-bottom: 1px solid #000 !important;">
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">Cantidad</p>
+                                </th>
+                                <th style="width: {{ 40 . '%' }}; text-align: center; padding: 0.1rem .1rem; background: #F05323; border: 1px solid #F05323; border-bottom: 1px solid #000 !important;">
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">Descripción</p>
+                                </th>
+                                <th style="width: {{ 15 . '%' }}; text-align: center; padding: 0.1rem .1rem; background: #F05323; border: 1px solid #F05323; border-bottom: 1px solid #000 !important;">
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">Valor Unitario</p>
+                                </th>
+
+                                <th style="width: {{ 15 . '%' }}; text-align: center; padding: 0.1rem .1rem; background: #F05323; border: 1px solid #F05323; border-bottom: 1px solid #000 !important;">
+                                    <p style="color: #fff; font-weight: 300; font-size: 10px; line-height: 0.8;">Precio de Venta</p>
+                                </th>
+                            </tr>
+                        </thead>
+
+                          <tbody style="height: 100%;">
+
+                            <tr style="">
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">957678</p>
+                                </td>
+                                <td style="width: {{ 8 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: ZZ</p>
+                                </td>
+                                <td style="width: {{ 8 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 1.00</p>
+                                </td>
+
+                                <td style="width: {{ 40 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: Concepto de pago</p>
+                                </td>
+
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 2.64</p>
+                                </td>
+
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 2.64</p>
+                                </td>
+                            </tr>
+
+                            <tr style="">
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">957678</p>
+                                </td>
+                                <td style="width: {{ 8 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: ZZ</p>
+                                </td>
+                                <td style="width: {{ 8 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 1.00</p>
+                                </td>
+
+                                <td style="width: {{ 40 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: Concepto de pago</p>
+                                </td>
+
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 2.64</p>
+                                </td>
+
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 2.64</p>
+                                </td>
+                            </tr>
+
+                            <tr style="">
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">957678</p>
+                                </td>
+                                <td style="width: {{ 8 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: ZZ</p>
+                                </td>
+                                <td style="width: {{ 8 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 1.00</p>
+                                </td>
+
+                                <td style="width: {{ 40 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: Concepto de pago</p>
+                                </td>
+
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 2.64</p>
+                                </td>
+
+                                <td style="width: {{ 15 . '%' }}; text-align: center; padding: 0.3rem .1rem; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: 0.8;">: 2.64</p>
+                                </td>
+                            </tr>
+
+                            
+                          </tbody>            
+                    </table>
+        
+                </div>
+
+            </div>
+
+            <div class="information-table mt-1" style="position: relative;">
+                <div class="table-footer" style="width: 45%; position: absolute; top: 0%; right: 0%;">
+
+                    <table style="width: 100%; border: 1px solid #000; " border="1" cellspacing="0">
+                          <tbody>
+                            <tr>
+                                <td style="width: {{ 60 . '%' }}; text-align: left;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">Descuentos</p>
+                                </td>
+                                <td style="width: {{ 40 . '%' }}; text-align: right;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">S/. 0.00</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 60 . '%' }}; text-align: left; border-top: 1px solid #fff;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">Valor de Venta Operaciones Gravadas</p>
+                                </td>
+                                <td style="width: {{ 40 . '%' }}; text-align: right; border-top: 1px solid #fff;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">S/. 1.00</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: {{ 60 . '%' }}; text-align: left; border-top: 1px solid #fff;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">Valor de Venta Operaciones Gravadas</p>
+                                </td>
+                                <td style="width: {{ 40 . '%' }}; text-align: right;border-top: 1px solid #fff;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">S/. 2.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: {{ 60 . '%' }}; text-align: left; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">Importe total</p>
+                                </td>
+                                <td style="width: {{ 40 . '%' }}; text-align: right; border-top: 1px solid #000;">
+                                    <p style="color: #000; font-weight: 300; font-size: 10px; line-height: .8;">S/. 3.00</p>
+                                </td>
+                            </tr>
+                          </tbody>            
+                    </table>
+
+                    <p style="color: #000; font-weight: 300; font-size: 11px; font-weight: bolder; margin-top: .3rem;">Son: DOS Y 64/100 SOLES</p>
+        
+                </div>
+
+            </div>
+
+        </div>
          
 
     </div>
 
     <div class="footer">
-        
-
+        <div class="container" >
+            <img class="qr" src="https://imgs.search.brave.com/MJf34Y4_nh0_jRpu8K2MgWmVPUTlLlE1bBSSF62aKzQ/rs:fit:768:768:1/g:ce/aHR0cHM6Ly9tdXNp/Y2xpbmd1YXRlYWNo/ZXJzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8wOS9x/cmNvZGUtNzY4eDc2/OC5wbmc" alt="">
+            <p class="text">Representación impresa de la Boleta de Venta Electrónica</p>
+            <p class="text">Autorizado mediante resolucion Nro. 0340050010017/SUNAT. Para consultar el comprobante ingresar a https://escondatagate.page.link/CPJz9. Representacion impresa del Comprobante Electronico.</p>
+        </div>
     </div>
     
 
